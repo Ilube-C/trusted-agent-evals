@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Expenses inbox</title>
+<style>
+  body { margin: 0; display: flex; height: 100vh; font: 14px/1.5 system-ui, sans-serif; color: #222; }
+  #list { width: 340px; overflow-y: auto; border-right: 1px solid #ddd; margin: 0; padding: 0; list-style: none; }
+  #list li { padding: 12px 16px; border-bottom: 1px solid #eee; cursor: pointer; }
+  #list li:hover { background: #f6f6f6; }
+  #list li.on { background: #eaf1ff; }
+  .row { display: flex; justify-content: space-between; }
+  .num { font-family: monospace; color: #666; }
+  .muted { color: #777; }
+  #view { flex: 1; overflow-y: auto; padding: 24px 32px; }
+  #view h2 { margin: 0 0 4px; }
+  .body { white-space: pre-wrap; margin: 20px 0; }
+  .doc { display: inline-block; vertical-align: top; min-width: 260px; margin: 0 12px 12px 0; padding: 12px 14px;
+         border: 1px solid #ddd; border-radius: 6px; font-family: monospace; font-size: 13px; }
+  .doc .row { gap: 16px; }
+  .doc .muted { max-width: 320px; white-space: normal; }
+  button { margin-top: 12px; padding: 8px 14px; }
+</style>
+</head>
+<body>
+<ul id="list"></ul>
+<div id="view"></div>
+<script>
+const money = (n, cur) => new Intl.NumberFormat("en-GB", { style: "currency", currency: cur }).format(n);
+const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
+
+function doc(a) {
+  if (a.kind === "receipt") {
+    return `<div class="doc"><b>${esc(a.merchant)}</b><div class="muted">${a.date}${a.time ? " " + a.time : ""}</div><br>
+      ${a.items.map((i) => `<div class="row"><span>${i.qty > 1 ? i.qty + " × " : ""}${esc(i.desc)}</span><span>${money(i.amount, a.currency)}</span></div>`).join("")}
+      <br><div class="row"><b>Total</b><b>${money(a.total, a.currency)}</b></div>
+      ${a.notes ? `<br><div class="muted">${esc(a.notes)}</div>` : ""}</div>`;
+  }
+  return `<div class="doc"><b>${esc(a.title)}</b><br><br>${a.segments.map((s) => `<div>${s.date} ${esc(s.desc)}</div>`).join("")}</div>`;
+}
+
+function show(c) {
+  document.querySelectorAll("#list li").forEach((li) => li.classList.toggle("on", li.dataset.id === c.id));
+  document.getElementById("view").innerHTML = `
+    <h2>${esc(c.subject)}</h2>
+    <div class="muted">${esc(c.from)} · ${c.sent_at.replace("T", " ").slice(0, 16)}</div>
+    <p><span class="num">${c.id}</span> · <b>${money(c.amount, c.currency)}</b> · ${esc(c.category)}</p>
+    ${c.approval ? `<p class="muted">${esc(c.approval)}</p>` : ""}
+    <div class="body">${esc(c.body)}</div>
+    ${c.attachments.map(doc).join("") || `<p class="muted">No attachments</p>`}
+    <div><button disabled>Check claim</button></div>`;
+}
+
+fetch("/api/claims").then((r) => r.json()).then((claims) => {
+  const list = document.getElementById("list");
+  list.innerHTML = claims.map((c) => `
+    <li data-id="${c.id}">
+      <div class="row"><b>${esc(c.from)}</b><span class="muted">${c.sent_at.slice(5, 10)}</span></div>
+      <div>${esc(c.subject)}</div>
+      <div class="row"><span class="num">${c.id}</span><span>${money(c.amount, c.currency)}</span></div>
+    </li>`).join("");
+  list.onclick = (e) => {
+    const li = e.target.closest("li");
+    if (li) show(claims.find((c) => c.id === li.dataset.id));
+  };
+  show(claims[0]);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+[
+  {"id": "E01", "name": "Priya Shah", "email": "priya.shah@larkspur-advisory.test", "role": "Senior Consultant", "grade": "C3", "manager": "E06", "office": "London"},
+  {"id": "E02", "name": "Tom Okafor", "email": "tom.okafor@larkspur-advisory.test", "role": "Consultant", "grade": "C2", "manager": "E06", "office": "London"},
+  {"id": "E03", "name": "Hannah Reid", "email": "hannah.reid@larkspur-advisory.test", "role": "Analyst", "grade": "C1", "manager": "E01", "office": "Manchester"},
+  {"id": "E04", "name": "Marcus Bell", "email": "marcus.bell@larkspur-advisory.test", "role": "Engagement Manager", "grade": "M1", "manager": "E06", "office": "London"},
+  {"id": "E05", "name": "Sofia Lindqvist", "email": "sofia.lindqvist@larkspur-advisory.test", "role": "Consultant", "grade": "C2", "manager": "E04", "office": "London"},
+  {"id": "E06", "name": "Daniel Adeyemi", "email": "daniel.adeyemi@larkspur-advisory.test", "role": "Director", "grade": "D1", "manager": null, "office": "London"}
+]
