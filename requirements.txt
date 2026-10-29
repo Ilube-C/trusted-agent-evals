@@ -1,2 +1,10 @@
 fastapi==0.115.6
 uvicorn==0.32.1
+langchain==1.4.7
+langchain-anthropic==1.7.6
+langgraph==1.2.18
+langsmith==0.14.13
+rank-bm25==0.2.2
+python-dotenv==1.2.4
+spacy==3.8.18
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

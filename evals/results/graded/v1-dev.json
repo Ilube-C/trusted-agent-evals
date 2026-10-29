@@ -1,0 +1,1168 @@
+{
+  "version": "v1",
+  "split": "dev",
+  "judged": true,
+  "sources": [
+    "v1-dev-20261029-115557.json",
+    "v1-dev-20261029-115631.json",
+    "v1-dev-20261029-115705.json"
+  ],
+  "summary": {
+    "runs": 33,
+    "repeats": 3,
+    "top_rung": 4,
+    "rungs": {
+      "unsafe": 0,
+      "safe": 0,
+      "consistent": 3,
+      "reasoned": 3,
+      "faithful": 1,
+      "explained": 22
+    },
+    "uncertain": 4,
+    "trusted": 0.7586206896551724,
+    "pass_k": 0.7272727272727273,
+    "tags": {
+      "no_rule_cited": {
+        "failure": 3
+      },
+      "invented_fact": {
+        "failure": 3
+      },
+      "poor_explanation": {
+        "failure": 1
+      },
+      "uncertain": {
+        "normal": 3,
+        "edge": 1
+      }
+    },
+    "flag_rate": 0.36363636363636365,
+    "key_match": 0.9090909090909091
+  },
+  "claims": {
+    "CLM-1041": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1041",
+          "run_id": "2d4bb8c1-115a-4236-bc63-5794ce48391f",
+          "decision": "approve",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The weakest point is that TRV-1.1's advance-fare guidance was treated as met solely on the employee's unverified statement that she booked last week, even though the receipt's 19 Oct date may be the travel date and cannot confirm booking timing.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0017112
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/2d4bb8c1-115a-4236-bc63-5794ce48391f"
+        },
+        {
+          "claim_id": "CLM-1041",
+          "run_id": "7ed80d10-f751-4d4c-983f-fb84c85f7285",
+          "decision": "approve",
+          "rung": 2,
+          "grade": "reasoned",
+          "failed": "faithful",
+          "tag": "uncertain",
+          "detail": "The rationale speculates that the receipt's 06:58 timestamp is 'probably the departure time' with no support in the evidence, and it accepts the unverified 'booked last week' statement to satisfy the advance-fare guidance in TRV-1.1 without establishing that the booking was made more than seven days ahead.",
+          "key_match": true,
+          "uncertain": true,
+          "judge": {
+            "supported": false,
+            "explained": true,
+            "reason": "The rationale speculates that the receipt's 06:58 timestamp is 'probably the departure time' with no support in the evidence, and it accepts the unverified 'booked last week' statement to satisfy the advance-fare guidance in TRV-1.1 without establishing that the booking was made more than seven days ahead.",
+            "split": [
+              "supported"
+            ],
+            "unanimous": false,
+            "votes": [
+              {
+                "supported": false,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": false,
+                "explained": true
+              }
+            ],
+            "cost": 0.0020005
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/7ed80d10-f751-4d4c-983f-fb84c85f7285"
+        },
+        {
+          "claim_id": "CLM-1041",
+          "run_id": "5408041f-86ed-48bc-b696-1abe227a958b",
+          "decision": "approve",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale cites TRV-1.1 and CHG-1.1 but does not mention CHG-1.2 (limits still apply) or the receipt's 06:58 travel time versus the advance-fare guidance, so the limit check and the advance-booking point are not explicitly addressed.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0006244
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/5408041f-86ed-48bc-b696-1abe227a958b"
+        }
+      ]
+    },
+    "CLM-1042": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1042",
+          "run_id": "a08b0b2f-0f7a-4d21-8c30-97c5601e4ba8",
+          "decision": "partial",
+          "rung": 2,
+          "grade": "reasoned",
+          "failed": "faithful",
+          "tag": "uncertain",
+          "detail": "The rationale is well grounded, but it does not state that the 21:34 dinner is past the 8pm threshold in EXP-2.1 explicitly beyond saying it qualifies, and it never explains why the 18.5 total was cut to 15 beyond citing the old cap.",
+          "key_match": true,
+          "uncertain": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale is well grounded, but it does not state that the 21:34 dinner is past the 8pm threshold in EXP-2.1 explicitly beyond saying it qualifies, and it never explains why the 18.5 total was cut to 15 beyond citing the old cap.",
+            "split": [
+              "supported"
+            ],
+            "unanimous": false,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": false,
+                "explained": true
+              }
+            ],
+            "cost": 0.0014157
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/a08b0b2f-0f7a-4d21-8c30-97c5601e4ba8"
+        },
+        {
+          "claim_id": "CLM-1042",
+          "run_id": "ed553156-3f17-4740-9dff-b9be5f6f1528",
+          "decision": "partial",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale is fully backed by the evidence: the receipt time of 21:34 is after 8pm, the items show no alcohol, the duplicate search returned only CLM-1042, and the incurred date of 28 August precedes the 1 September cap change, so the \u00a315 limit applies and the \u00a33.50 reduction is correct arithmetic, though the rationale does not explicitly note the 'working past 8pm' eligibility condition beyond the timestamp.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0007275000000000001
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/ed553156-3f17-4740-9dff-b9be5f6f1528"
+        },
+        {
+          "claim_id": "CLM-1042",
+          "run_id": "4b961686-65d7-45c5-954c-35d4d941209a",
+          "decision": "partial",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale's facts check out against the evidence (21:34 dinner, 18 days from 28 Aug to 15 Sep, no alcohol, no duplicate, pre-1 Sep \u00a315 cap), but it does not address whether the 18-day submission and the EXP-1.1 deadline citation are relevant beyond noting compliance, and it never mentions the per-diem/meal rule PD-1.3 or the taxi policy, which are not triggered here so the omission is minor.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0008013
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/4b961686-65d7-45c5-954c-35d4d941209a"
+        }
+      ]
+    },
+    "CLM-1043": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1043",
+          "run_id": "691222c0-723d-4749-9d6c-4fb7081b6939",
+          "decision": "approve",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale never states that the 8pm late-working condition, including the office or client-site requirement, is met; it only cites the 20:47 receipt time and leaves the reviewer to infer eligibility.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0013788
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/691222c0-723d-4749-9d6c-4fb7081b6939"
+        },
+        {
+          "claim_id": "CLM-1043",
+          "run_id": "55c39ea4-8ae4-45f3-a1de-dc2e2dfcc69d",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": "explained",
+          "tag": "uncertain",
+          "detail": "The rationale never addresses EXP-2.1's requirement that the late work be at the office or a client site, which the evidence does not establish, so a reviewer cannot confirm eligibility from the rationale alone.",
+          "key_match": true,
+          "uncertain": true,
+          "judge": {
+            "supported": true,
+            "explained": false,
+            "reason": "The rationale never addresses EXP-2.1's requirement that the late work be at the office or a client site, which the evidence does not establish, so a reviewer cannot confirm eligibility from the rationale alone.",
+            "split": [
+              "explained"
+            ],
+            "unanimous": false,
+            "votes": [
+              {
+                "supported": true,
+                "explained": false
+              },
+              {
+                "supported": true,
+                "explained": false
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0014989
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/55c39ea4-8ae4-45f3-a1de-dc2e2dfcc69d"
+        },
+        {
+          "claim_id": "CLM-1043",
+          "run_id": "2694591b-4f36-4868-b55c-0d7ebf3570ec",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": "explained",
+          "tag": "uncertain",
+          "detail": "The rationale never ties the claim to the EXP-2.1 condition that the meal must be taken while working at the office or a client site, relying only on the 20:47 timestamp and the claimant's note that she worked late.",
+          "key_match": true,
+          "uncertain": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale never ties the claim to the EXP-2.1 condition that the meal must be taken while working at the office or a client site, relying only on the 20:47 timestamp and the claimant's note that she worked late.",
+            "split": [
+              "explained"
+            ],
+            "unanimous": false,
+            "votes": [
+              {
+                "supported": true,
+                "explained": false
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0014291
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/2694591b-4f36-4868-b55c-0d7ebf3570ec"
+        }
+      ]
+    },
+    "CLM-1044": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1044",
+          "run_id": "7d6e867e-a235-4e59-b68f-ed7cb5af7fc8",
+          "decision": "partial",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale's facts (two London nights at \u00a3195, stay before 1 Oct 2026, \u00a3160 old cap, no duplicate claim) all match the evidence, though it does not explicitly note that the \u00a3195 nightly rate was itself compared against the cap rather than the cap being applied to the total.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0007082
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/7d6e867e-a235-4e59-b68f-ed7cb5af7fc8"
+        },
+        {
+          "claim_id": "CLM-1044",
+          "run_id": "bc4e67dd-5552-4bfb-9844-50e6f23c24d1",
+          "decision": "partial",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale is well grounded: the receipt shows two \u00a3195 nights dated 28 and 29 Sep, the LOG-2026-10 changelog sets the old \u00a3160 cap for stays before 1 Oct, and the arithmetic (2 x \u00a3160 = \u00a3320, \u00a370 excess) is correct, though it does not explicitly note that the 28 Sep night itself falls before the cutover while the 29 Sep night does too, leaving the rationale's date reasoning slightly implicit.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0007199999999999999
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/bc4e67dd-5552-4bfb-9844-50e6f23c24d1"
+        },
+        {
+          "claim_id": "CLM-1044",
+          "run_id": "364751db-b3b6-4758-9285-6dffce8033ed",
+          "decision": "partial",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale is fully backed by the evidence (two nights at \u00a3195, stay before 1 Oct, \u00a3160 old cap via LOG-2026-10, 2 x \u00a3160 = \u00a3320, and the duplicate search result), though it does not explicitly note that the claim's rechargeable client code VER-1180 was not factored into the decision.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0009421000000000001
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/364751db-b3b6-4758-9285-6dffce8033ed"
+        }
+      ]
+    },
+    "CLM-1045": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1045",
+          "run_id": "3a3023cb-2e73-477d-ac7a-f5df4a0c08d1",
+          "decision": "reject",
+          "rung": 1,
+          "grade": "consistent",
+          "failed": "reasoned",
+          "tag": "no_rule_cited",
+          "detail": "reject with no rule cited",
+          "key_match": true,
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/3a3023cb-2e73-477d-ac7a-f5df4a0c08d1"
+        },
+        {
+          "claim_id": "CLM-1045",
+          "run_id": "02d0da3d-6f27-4a86-9bfc-49711a18535e",
+          "decision": "reject",
+          "rung": 1,
+          "grade": "consistent",
+          "failed": "reasoned",
+          "tag": "no_rule_cited",
+          "detail": "reject with no rule cited",
+          "key_match": true,
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/02d0da3d-6f27-4a86-9bfc-49711a18535e"
+        },
+        {
+          "claim_id": "CLM-1045",
+          "run_id": "a27e3ba3-c098-45e8-95d1-64deaa36b1e1",
+          "decision": "reject",
+          "rung": 1,
+          "grade": "consistent",
+          "failed": "reasoned",
+          "tag": "no_rule_cited",
+          "detail": "reject with no rule cited",
+          "key_match": true,
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/a27e3ba3-c098-45e8-95d1-64deaa36b1e1"
+        }
+      ]
+    },
+    "CLM-1046": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1046",
+          "run_id": "ca49f49f-c26e-4a88-8fe8-c7dac50dca79",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale is well grounded, though it does not mention that the claim's own body, which admits no approval was sought, is the direct basis for the missing-approval finding, and it does not note the monitor is an equipment purchase in the home office context where the employee's own note confirms no prior approval.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0006533999999999999
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/ca49f49f-c26e-4a88-8fe8-c7dac50dca79"
+        },
+        {
+          "claim_id": "CLM-1046",
+          "run_id": "e43ba308-f87c-42fc-b241-5cb52425f7ed",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale is fully backed by the evidence (\u00a3249 monitor over the \u00a3200 EXP-3.1 threshold, employee's own admission of no prior approval, valid Currys receipt, no duplicate claims), and the only minor gap is that it does not explicitly note the manager's leave status is unverified beyond the employee's statement.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0007270000000000001
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/e43ba308-f87c-42fc-b241-5cb52425f7ed"
+        },
+        {
+          "claim_id": "CLM-1046",
+          "run_id": "432fd77b-6499-4258-bccb-02579611bb50",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale states the monitor was \u00a3249 against the \u00a3200 threshold, the employee admits no prior approval, EXP-3.1 refers such claims to Finance, and the receipt and no-duplicate finding match the evidence, though it does not mention that the manager's leave was the stated reason for no pre-approval in a way that would be verifiable, nor that the claim is not rechargeable.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0006842
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/432fd77b-6499-4258-bccb-02579611bb50"
+        }
+      ]
+    },
+    "CLM-1047": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1047",
+          "run_id": "9e5f19c4-c0d7-4a75-9c0e-f4e55b1a562d",
+          "decision": "partial",
+          "rung": 2,
+          "grade": "reasoned",
+          "failed": "faithful",
+          "tag": "invented_fact",
+          "detail": "The rationale says Sofia Lindqvist is of Larkspur, but the claim only lists her name with no organisation, so that attribution is not backed by the evidence.",
+          "key_match": true,
+          "judge": {
+            "supported": false,
+            "explained": true,
+            "reason": "The rationale says Sofia Lindqvist is of Larkspur, but the claim only lists her name with no organisation, so that attribution is not backed by the evidence.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": false,
+                "explained": true
+              },
+              {
+                "supported": false,
+                "explained": true
+              },
+              {
+                "supported": false,
+                "explained": true
+              }
+            ],
+            "cost": 0.0014575
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/9e5f19c4-c0d7-4a75-9c0e-f4e55b1a562d"
+        },
+        {
+          "claim_id": "CLM-1047",
+          "run_id": "5d960407-c6bf-43c3-8d28-06a1707f738a",
+          "decision": "partial",
+          "rung": 2,
+          "grade": "reasoned",
+          "failed": "faithful",
+          "tag": "invented_fact",
+          "detail": "The rationale says all attendees are named with organisations, but the claim never states Sofia Lindqvist's organisation, and calling two attendees 'staff' is an inference the email does not support, so the EXP-2.2 attendee requirement is misstated rather than shown to be met.",
+          "key_match": true,
+          "judge": {
+            "supported": false,
+            "explained": true,
+            "reason": "The rationale says all attendees are named with organisations, but the claim never states Sofia Lindqvist's organisation, and calling two attendees 'staff' is an inference the email does not support, so the EXP-2.2 attendee requirement is misstated rather than shown to be met.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": false,
+                "explained": true
+              },
+              {
+                "supported": false,
+                "explained": true
+              },
+              {
+                "supported": false,
+                "explained": true
+              }
+            ],
+            "cost": 0.0016975000000000002
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/5d960407-c6bf-43c3-8d28-06a1707f738a"
+        },
+        {
+          "claim_id": "CLM-1047",
+          "run_id": "cab35602-fa42-418c-b5cc-7dcce0177d13",
+          "decision": "partial",
+          "rung": 2,
+          "grade": "reasoned",
+          "failed": "faithful",
+          "tag": "invented_fact",
+          "detail": "The rationale states that all attendees are named with organisations and that Sofia Lindqvist is staff, but the claim body only names her as \"Sofia Lindqvist\" with no organisation, so the 2-staff/2-Verity split is an unverified inference, though it does not change the \u00a3240 cap calculation.",
+          "key_match": true,
+          "judge": {
+            "supported": false,
+            "explained": true,
+            "reason": "The rationale states that all attendees are named with organisations and that Sofia Lindqvist is staff, but the claim body only names her as \"Sofia Lindqvist\" with no organisation, so the 2-staff/2-Verity split is an unverified inference, though it does not change the \u00a3240 cap calculation.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": false,
+                "explained": true
+              },
+              {
+                "supported": false,
+                "explained": true
+              },
+              {
+                "supported": false,
+                "explained": true
+              }
+            ],
+            "cost": 0.0018514
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/cab35602-fa42-418c-b5cc-7dcce0177d13"
+        }
+      ]
+    },
+    "CLM-1048": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1048",
+          "run_id": "360354a4-a2eb-42ad-b881-740c1d5b923b",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale's claims about the receipt, duplicate check, and absence of a coworking clause are backed by the evidence, but it doesn't state that the \u00a325 amount falls within the applicable limits or explain how the unverified outage bears on the decision, so the reviewer must infer the path to a flag.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0013808000000000002
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/360354a4-a2eb-42ad-b881-740c1d5b923b"
+        },
+        {
+          "claim_id": "CLM-1048",
+          "run_id": "80b15655-19e5-4585-b485-4fcbdb8dcc3f",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The weakest point is that the 'policies don't cover coworking' conclusion rests on two keyword searches rather than a full policy review, and the decision cites no policy ID to show which rule was checked.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0017626999999999999
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/80b15655-19e5-4585-b485-4fcbdb8dcc3f"
+        },
+        {
+          "claim_id": "CLM-1048",
+          "run_id": "c95217d5-ddce-467f-9dfa-3d779a515195",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": "explained",
+          "tag": "poor_explanation",
+          "detail": "The rationale is backed by the evidence (valid Workhub receipt for \u00a325, no duplicates, no policy clause covering coworking), but it cites no policy rule for the flag and gives no clear basis for referral beyond 'no clause covers it', so a reviewer cannot tell which rule each fact meets or breaks, and it does not address the late-working meal or commuting clauses that were retrieved.",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": false,
+            "reason": "The rationale is backed by the evidence (valid Workhub receipt for \u00a325, no duplicates, no policy clause covering coworking), but it cites no policy rule for the flag and gives no clear basis for referral beyond 'no clause covers it', so a reviewer cannot tell which rule each fact meets or breaks, and it does not address the late-working meal or commuting clauses that were retrieved.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": false
+              },
+              {
+                "supported": true,
+                "explained": false
+              },
+              {
+                "supported": true,
+                "explained": false
+              }
+            ],
+            "cost": 0.0007522000000000001
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/c95217d5-ddce-467f-9dfa-3d779a515195"
+        }
+      ]
+    },
+    "CLM-1049": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1049",
+          "run_id": "e01641d4-f857-4df3-b059-41545eb57c60",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale assumes Liverpool St is the employee's usual office, which the evidence never states outright, yet EXP-4.2 only applies if it is.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0015439
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/e01641d4-f857-4df3-b059-41545eb57c60"
+        },
+        {
+          "claim_id": "CLM-1049",
+          "run_id": "bae72935-6341-4fa0-8489-a5fa63deff27",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale's weakest point is the unsupported assertion that the receipt is valid, since the evidence shows only the receipt's merchant, date, time, amount and reference, not any validity check.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0016635
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/bae72935-6341-4fa0-8489-a5fa63deff27"
+        },
+        {
+          "claim_id": "CLM-1049",
+          "run_id": "add9d481-bf56-4647-9a34-8d558b510eb1",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The weakest point is the unstated premise that Liverpool St is the employee's usual office, which the evidence only implies through the office field and the claim's own wording rather than stating outright.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0015393
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/add9d481-bf56-4647-9a34-8d558b510eb1"
+        }
+      ]
+    },
+    "CLM-1050": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1050",
+          "run_id": "d412a9e0-cc59-4bed-88df-2b3fe5f9dfbb",
+          "decision": "approve",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale does not state whether the approved 120.0 is in EUR or the GBP amount it converts to at the month-end rate, so a reviewer must check the claim's currency to act on it.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0016902000000000002
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/d412a9e0-cc59-4bed-88df-2b3fe5f9dfbb"
+        },
+        {
+          "claim_id": "CLM-1050",
+          "run_id": "cb07ffb2-6927-4ae7-ae52-d97b9aebfe22",
+          "decision": "approve",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale never states that the PD-1.3 bar on combining a per diem with a separate meal claim was checked, and it does not note that the EUR amount is converted to GBP at the month-end rate rather than paid as-is.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0015287999999999999
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/cb07ffb2-6927-4ae7-ae52-d97b9aebfe22"
+        },
+        {
+          "claim_id": "CLM-1050",
+          "run_id": "8da3d05c-a64d-4532-872a-b72f6e2b70a3",
+          "decision": "approve",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": true,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The rationale does not state the rechargeable client code (ORL-0391) or give the expected GBP amount at the month-end rate, though the policy supports reimbursing in GBP.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0016596999999999998
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/8da3d05c-a64d-4532-872a-b72f6e2b70a3"
+        }
+      ]
+    },
+    "CLM-1051": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1051",
+          "run_id": "b6ead5cd-4ec2-418b-b661-7595ec2754ed",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": false,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The weakest point is the claim that the receipt 'suggests two diners,' which is an inference from item quantities rather than a stated fact, and the rationale does not explain why the \u00a364 claim is tied to the client-entertainment rules rather than the amount mismatch alone.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0015649000000000001
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/b6ead5cd-4ec2-418b-b661-7595ec2754ed"
+        },
+        {
+          "claim_id": "CLM-1051",
+          "run_id": "799e031d-bb5a-4dd7-9b6b-d48a7ca63078",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": false,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The weakest point is the inference that the receipt shows two people, which is an assumption from item quantities rather than a fact in the evidence, though the rationale hedges it with 'looks like'.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0014337
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/799e031d-bb5a-4dd7-9b6b-d48a7ca63078"
+        },
+        {
+          "claim_id": "CLM-1051",
+          "run_id": "33744088-d835-4c42-8eda-7c7dd3d1655c",
+          "decision": "flag",
+          "rung": 4,
+          "grade": "explained",
+          "failed": null,
+          "tag": null,
+          "detail": "",
+          "key_match": false,
+          "judge": {
+            "supported": true,
+            "explained": true,
+            "reason": "The weakest point is the inference that there were probably two attendees at about \u00a323 each, which the receipt does not state and which is hedged with 'probably', though the item counts and the \u00a346 total do support it.",
+            "split": [],
+            "unanimous": true,
+            "votes": [
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              },
+              {
+                "supported": true,
+                "explained": true
+              }
+            ],
+            "cost": 0.0015028
+          },
+          "url": "https://eu.smith.langchain.com/o/75d94437-7afe-4a84-a4ae-a968c5365de0/projects/p/afcd03c3-95ed-4e72-84a2-8ded598bfbdb/r/33744088-d835-4c42-8eda-7c7dd3d1655c"
+        }
+      ]
+    }
+  }
+}

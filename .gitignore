@@ -5,5 +5,11 @@ __pycache__/
 *.pyc
 .pytest_cache/
 traces/*.jsonl
-evals/results/*.json
+# Run results are committed so the evals page works from a clone; superseded and partial runs are not.
+evals/results/old/
+evals/results/incomplete/
 .DS_Store
+data/decisions.json
+
+# Working notes, not for the submission
+HANDOVER.md

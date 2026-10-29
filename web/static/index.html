@@ -20,11 +20,16 @@
   .doc .row { gap: 16px; }
   .doc .muted { max-width: 320px; white-space: normal; }
   button { margin-top: 12px; padding: 8px 14px; }
+  .decision { margin-top: 16px; padding: 12px 14px; border-left: 4px solid #999; background: #f7f7f7; max-width: 640px; }
+  .decision.approve { border-color: #2e7d4f; } .decision.partial { border-color: #2d5f8f; }
+  .decision.reject { border-color: #a33a32; } .decision.flag { border-color: #8a4d9e; }
+  #ref { position: fixed; top: 12px; right: 16px; font-size: 13px; color: #2d5f8f; }
 </style>
 </head>
 <body>
 <ul id="list"></ul>
 <div id="view"></div>
+<a id="ref" href="/evals">Evals →</a>
 <script>
 const money = (n, cur) => new Intl.NumberFormat("en-GB", { style: "currency", currency: cur }).format(n);
 const esc = (s) => String(s ?? "").replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]);
@@ -48,7 +53,26 @@ function show(c) {
     ${c.approval ? `<p class="muted">${esc(c.approval)}</p>` : ""}
     <div class="body">${esc(c.body)}</div>
     ${c.attachments.map(doc).join("") || `<p class="muted">No attachments</p>`}
-    <div><button disabled>Check claim</button></div>`;
+    <div><button id="check">Check claim</button></div>
+    <div id="result">${c.decision ? decision(c) : ""}</div>`;
+  document.getElementById("check").onclick = async (e) => {
+    e.target.disabled = true;
+    e.target.textContent = "Checking…";
+    const res = await fetch(`/api/claims/${c.id}/check`, { method: "POST" });
+    e.target.disabled = false;
+    e.target.textContent = "Check claim";
+    if (!res.ok) { document.getElementById("result").textContent = "Checker failed: " + (await res.text()); return; }
+    c.decision = await res.json();
+    document.getElementById("result").innerHTML = decision(c);
+  };
+}
+
+function decision(c) {
+  const d = c.decision;
+  const amount = d.approved_amount == null ? "" : ` · ${money(d.approved_amount, c.currency)}`;
+  return `<div class="decision ${d.decision}"><b>${d.decision.toUpperCase()}</b>${amount}
+    <div class="num">${d.clause_ids.join(", ") || "no clauses cited"}</div>
+    <p>${esc(d.rationale)}</p></div>`;
 }
 
 fetch("/api/claims").then((r) => r.json()).then((claims) => {

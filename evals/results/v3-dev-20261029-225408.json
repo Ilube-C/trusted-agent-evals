@@ -1,0 +1,889 @@
+{
+  "version": "v3",
+  "model": "claude-sonnet-5-5",
+  "split": "dev",
+  "cost_usd": 0.3471,
+  "results": [
+    {
+      "claim_id": "CLM-1041",
+      "version": "v3",
+      "run_id": "697f58a0-522c-4a57-93fc-1f159ea71d06",
+      "decision": {
+        "claim_id": "CLM-1041",
+        "decision": "approve",
+        "approved_amount": 86.4,
+        "clause_ids": [
+          "TRV-1.1",
+          "CHG-1.1",
+          "CHG-1.2"
+        ],
+        "rationale": "Approved 86.40 GBP. The receipt from Avanti West Coast (ref AWC-77Q3KD) is for a standard-class London Euston to Manchester Piccadilly return. It totals 86.40 GBP, which matches the claim amount. TRV-1.1 reimburses rail at standard class. The claim is marked rechargeable and carries client code HAL-2207, as CHG-1.1 requires. compare_to_history lists nothing as unusual: the category z-score is 0.1 and the employee z-score is 0.3. It shows no new merchants and no repeats, and the content matches the Rail category. One fact is missing. The receipt shows the travel date (2026-10-19) but not the booking date, so I can't check the TRV-1.1 advance-fare guidance. The email says only \"booked last week\". That guidance says \"should\", so I did not reduce the amount."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "rail travel standard class booking",
+          "clause_ids": [
+            "TRV-1.1",
+            "TRV-1.2",
+            "EXP-4.2",
+            "PD-1.3"
+          ]
+        },
+        {
+          "query": "rechargeable client expenses client code",
+          "clause_ids": [
+            "CHG-1.1",
+            "CHG-1.2",
+            "EXP-2.2",
+            "EXP-2.1"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1041"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1041"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "rail travel standard class booking"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "rechargeable client expenses client code"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1041",
+            "decision": "approve",
+            "approved_amount": 86.4,
+            "clause_ids": [
+              "TRV-1.1",
+              "CHG-1.1",
+              "CHG-1.2"
+            ],
+            "rationale": "Approved 86.40 GBP. The receipt from Avanti West Coast (ref AWC-77Q3KD) is for a standard-class London Euston to Manchester Piccadilly return. It totals 86.40 GBP, which matches the claim amount. TRV-1.1 reimburses rail at standard class. The claim is marked rechargeable and carries client code HAL-2207, as CHG-1.1 requires. compare_to_history lists nothing as unusual: the category z-score is 0.1 and the employee z-score is 0.3. It shows no new merchants and no repeats, and the content matches the Rail category. One fact is missing. The receipt shows the travel date (2026-10-19) but not the booking date, so I can't check the TRV-1.1 advance-fare guidance. The email says only \"booked last week\". That guidance says \"should\", so I did not reduce the amount."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 9666,
+        "output_tokens": 1110
+      }
+    },
+    {
+      "claim_id": "CLM-1042",
+      "version": "v3",
+      "run_id": "569b2cf8-0ad3-4f50-a034-2fd09adf4410",
+      "decision": {
+        "claim_id": "CLM-1042",
+        "decision": "partial",
+        "approved_amount": 15.0,
+        "clause_ids": [
+          "EXP-2.1",
+          "LOG-2026-09",
+          "EXP-1.1"
+        ],
+        "rationale": "The claim is for a late dinner of 18.50 GBP. The receipt is from Dishoom Shoreditch, dated 2026-08-28 at 21:34, and its total is 18.50 GBP. That matches the claim. The receipt lists no alcohol. EXP-2.1 allows one meal for work past 8pm. The expense was incurred on 2026-08-28, which is before the 1 September 2026 cap increase (LOG-2026-09). So the old limit of 15 GBP applies, not 20 GBP. I am approving 15.00 GBP and declining the 3.50 GBP above the cap. The claim was sent on 2026-09-15, which is 18 days after the expense, so it meets the 30-day deadline in EXP-1.1. compare_to_history lists nothing as unusual. It found no repeats and no new merchants."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "submission deadline for claims after expense incurred",
+          "clause_ids": [
+            "EXP-1.1",
+            "TRV-2.1",
+            "EXP-1.3",
+            "LOG-2026-09"
+          ]
+        },
+        {
+          "query": "meal allowance late working dinner limit",
+          "clause_ids": [
+            "LOG-2026-09",
+            "EXP-2.1",
+            "PD-1.1",
+            "EXP-2.2"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1042"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1042"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "meal allowance late working dinner limit"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "submission deadline for claims after expense incurred"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1042",
+            "decision": "partial",
+            "approved_amount": 15,
+            "clause_ids": [
+              "EXP-2.1",
+              "LOG-2026-09",
+              "EXP-1.1"
+            ],
+            "rationale": "The claim is for a late dinner of 18.50 GBP. The receipt is from Dishoom Shoreditch, dated 2026-08-28 at 21:34, and its total is 18.50 GBP. That matches the claim. The receipt lists no alcohol. EXP-2.1 allows one meal for work past 8pm. The expense was incurred on 2026-08-28, which is before the 1 September 2026 cap increase (LOG-2026-09). So the old limit of 15 GBP applies, not 20 GBP. I am approving 15.00 GBP and declining the 3.50 GBP above the cap. The claim was sent on 2026-09-15, which is 18 days after the expense, so it meets the 30-day deadline in EXP-1.1. compare_to_history lists nothing as unusual. It found no repeats and no new merchants."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 9823,
+        "output_tokens": 1084
+      }
+    },
+    {
+      "claim_id": "CLM-1043",
+      "version": "v3",
+      "run_id": "9be9ae19-ca83-4be5-967a-7d7478a87f03",
+      "decision": {
+        "claim_id": "CLM-1043",
+        "decision": "approve",
+        "approved_amount": 18.5,
+        "clause_ids": [
+          "EXP-2.1",
+          "LOG-2026-09",
+          "EXP-1.1"
+        ],
+        "rationale": "Meal claim of 18.50 GBP, incurred 2026-09-10 and matching the receipt total of 18.50 GBP (Pho bo 13.50 GBP, Summer rolls 5.00 GBP; no alcohol items). The receipt time is 20:47, which is after 8pm. The limit under EXP-2.1 is 20 GBP per person. LOG-2026-09 raised it from 15 GBP for expenses incurred on or after 1 September 2026, so the new limit applies. The claim was sent 2026-10-02, 22 days after the expense, which is within the 30-day deadline in EXP-1.1. compare_to_history lists nothing as unusual: category z 0.0, employee z 0.3, no new merchants, no repeats. One fact is missing: the claim doesn't say whether she worked at the office or a client site, which EXP-2.1 mentions. The email only says she worked late on the Verity model review. I approved on the other facts."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "late working meal allowance limit",
+          "clause_ids": [
+            "LOG-2026-09",
+            "EXP-2.1",
+            "PD-1.1",
+            "EXP-2.2"
+          ]
+        },
+        {
+          "query": "submission deadline for claims after expense incurred",
+          "clause_ids": [
+            "EXP-1.1",
+            "TRV-2.1",
+            "EXP-1.3",
+            "LOG-2026-09"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1043"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1043"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "late working meal allowance limit"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "submission deadline for claims after expense incurred"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1043",
+            "decision": "approve",
+            "approved_amount": 18.5,
+            "clause_ids": [
+              "EXP-2.1",
+              "LOG-2026-09",
+              "EXP-1.1"
+            ],
+            "rationale": "Meal claim of 18.50 GBP, incurred 2026-09-10 and matching the receipt total of 18.50 GBP (Pho bo 13.50 GBP, Summer rolls 5.00 GBP; no alcohol items). The receipt time is 20:47, which is after 8pm. The limit under EXP-2.1 is 20 GBP per person. LOG-2026-09 raised it from 15 GBP for expenses incurred on or after 1 September 2026, so the new limit applies. The claim was sent 2026-10-02, 22 days after the expense, which is within the 30-day deadline in EXP-1.1. compare_to_history lists nothing as unusual: category z 0.0, employee z 0.3, no new merchants, no repeats. One fact is missing: the claim doesn't say whether she worked at the office or a client site, which EXP-2.1 mentions. The email only says she worked late on the Verity model review. I approved on the other facts."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 10006,
+        "output_tokens": 1300
+      }
+    },
+    {
+      "claim_id": "CLM-1044",
+      "version": "v3",
+      "run_id": "c0f49c51-2176-479d-bf21-ab05869770e0",
+      "decision": {
+        "claim_id": "CLM-1044",
+        "decision": "partial",
+        "approved_amount": 320.0,
+        "clause_ids": [
+          "TRV-3.1",
+          "LOG-2026-10",
+          "CHG-1.2",
+          "CHG-1.1"
+        ],
+        "rationale": "The claim is for 390.00 GBP: two London hotel nights, 28 and 29 Sep 2026, at 195.00 GBP each. The stay was before 1 Oct 2026, so the old London cap of 160 GBP per night applies (LOG-2026-10, TRV-3.1). That gives 2 x 160 = 320.00 GBP. The 70.00 GBP above the cap is not reimbursable. The claim is marked rechargeable, and CHG-1.2 says the same limits apply to rechargeable expenses. The contract has no written exception in the claim. It carries client code VER-1180, which meets CHG-1.1. compare_to_history lists nothing as unusual. The receipt total matches the claim amount, and there are no repeats or new merchants. I am approving 320.00 GBP."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "hotel nightly rate limit London",
+          "clause_ids": [
+            "LOG-2026-10",
+            "PD-1.2",
+            "TRV-3.1",
+            "LOG-2026-09"
+          ]
+        },
+        {
+          "query": "rechargeable client expenses requirements",
+          "clause_ids": [
+            "CHG-1.1",
+            "CHG-1.2",
+            "EXP-2.2",
+            "LOG-2026-09"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1044"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1044"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "hotel nightly rate limit London"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "rechargeable client expenses requirements"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1044",
+            "decision": "partial",
+            "approved_amount": 320,
+            "clause_ids": [
+              "TRV-3.1",
+              "LOG-2026-10",
+              "CHG-1.2",
+              "CHG-1.1"
+            ],
+            "rationale": "The claim is for 390.00 GBP: two London hotel nights, 28 and 29 Sep 2026, at 195.00 GBP each. The stay was before 1 Oct 2026, so the old London cap of 160 GBP per night applies (LOG-2026-10, TRV-3.1). That gives 2 x 160 = 320.00 GBP. The 70.00 GBP above the cap is not reimbursable. The claim is marked rechargeable, and CHG-1.2 says the same limits apply to rechargeable expenses. The contract has no written exception in the claim. It carries client code VER-1180, which meets CHG-1.1. compare_to_history lists nothing as unusual. The receipt total matches the claim amount, and there are no repeats or new merchants. I am approving 320.00 GBP."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 9978,
+        "output_tokens": 1069
+      }
+    },
+    {
+      "claim_id": "CLM-1045",
+      "version": "v3",
+      "run_id": "ec0b5802-0488-4b87-b28d-8490f8c2fd95",
+      "decision": {
+        "claim_id": "CLM-1045",
+        "decision": "reject",
+        "approved_amount": 0.0,
+        "clause_ids": [
+          "EXP-1.3"
+        ],
+        "rationale": "CLM-1045 claims 86.40 GBP for Avanti West Coast, London Euston to Manchester Piccadilly return, receipt ref AWC-77Q3KD, dated 2026-10-19. CLM-1041 was submitted earlier by the same employee, Priya Shah (E01). It has the same receipt ref, merchant, date, card ****4417 and amount of 86.40 GBP. compare_to_history lists \"same merchant and amount within 30 days\" as unusual and names CLM-1041 as a repeat. EXP-1.3 says each expense may be claimed once. The amount is 86.40 GBP in both claims. The tools did not show whether CLM-1041 has been reimbursed, but that does not change the outcome: this is a second claim for the same expense. Any approval belongs on CLM-1041, not here. Nothing else was unusual: the category and employee amount scores were 0.1 and 0.3, and the receipt total matches the claim."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "duplicate claims same receipt",
+          "clause_ids": [
+            "EXP-1.3",
+            "EXP-1.2",
+            "PD-1.1",
+            "EXP-1.1"
+          ]
+        },
+        {
+          "query": "rail travel standard class rechargeable client code",
+          "clause_ids": [
+            "TRV-1.1",
+            "CHG-1.1",
+            "CHG-1.2",
+            "TRV-1.2"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1045"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1045"
+          }
+        },
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1041"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "duplicate claims same receipt"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "rail travel standard class rechargeable client code"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1045",
+            "decision": "reject",
+            "approved_amount": 0,
+            "clause_ids": [
+              "EXP-1.3"
+            ],
+            "rationale": "CLM-1045 claims 86.40 GBP for Avanti West Coast, London Euston to Manchester Piccadilly return, receipt ref AWC-77Q3KD, dated 2026-10-19. CLM-1041 was submitted earlier by the same employee, Priya Shah (E01). It has the same receipt ref, merchant, date, card ****4417 and amount of 86.40 GBP. compare_to_history lists \"same merchant and amount within 30 days\" as unusual and names CLM-1041 as a repeat. EXP-1.3 says each expense may be claimed once. The amount is 86.40 GBP in both claims. The tools did not show whether CLM-1041 has been reimbursed, but that does not change the outcome: this is a second claim for the same expense. Any approval belongs on CLM-1041, not here. Nothing else was unusual: the category and employee amount scores were 0.1 and 0.3, and the receipt total matches the claim."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 10838,
+        "output_tokens": 1209
+      }
+    },
+    {
+      "claim_id": "CLM-1046",
+      "version": "v3",
+      "run_id": "30a506b4-0410-4907-b8b3-f9f2e9fdb1df",
+      "decision": {
+        "claim_id": "CLM-1046",
+        "decision": "flag",
+        "approved_amount": null,
+        "clause_ids": [
+          "EXP-3.1"
+        ],
+        "rationale": "Claim is for a 27in QHD monitor from Currys, 249.00 GBP, which matches the receipt total of 249.00 GBP. EXP-3.1 requires written manager approval before any equipment purchase over £200, and claims without it are referred to Finance. The claim contains no written approval. The email says the employee did not ask the manager (Daniel Adeyemi) first because he was on leave. Finance needs to decide whether to pay 249.00 GBP without prior approval. compare_to_history lists nothing as unusual. The employee's amount z-score is 2.6, which is below the unusual threshold of 3. There are no duplicates or new merchants."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "equipment purchase monitor home office pre-approval",
+          "clause_ids": [
+            "EXP-3.1",
+            "EXP-4.2",
+            "TRV-1.2",
+            "TRV-2.1"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1046"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1046"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "equipment purchase monitor home office pre-approval"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1046",
+            "decision": "flag",
+            "approved_amount": null,
+            "clause_ids": [
+              "EXP-3.1"
+            ],
+            "rationale": "Claim is for a 27in QHD monitor from Currys, 249.00 GBP, which matches the receipt total of 249.00 GBP. EXP-3.1 requires written manager approval before any equipment purchase over £200, and claims without it are referred to Finance. The claim contains no written approval. The email says the employee did not ask the manager (Daniel Adeyemi) first because he was on leave. Finance needs to decide whether to pay 249.00 GBP without prior approval. compare_to_history lists nothing as unusual. The employee's amount z-score is 2.6, which is below the unusual threshold of 3. There are no duplicates or new merchants."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 8568,
+        "output_tokens": 841
+      }
+    },
+    {
+      "claim_id": "CLM-1047",
+      "version": "v3",
+      "run_id": "35d25c06-4738-4598-ac79-dbc1be98d09a",
+      "decision": {
+        "claim_id": "CLM-1047",
+        "decision": "partial",
+        "approved_amount": 240.0,
+        "clause_ids": [
+          "EXP-2.2",
+          "EXP-2.3",
+          "CHG-1.2"
+        ],
+        "rationale": "The claim is £268.00 GBP for a client dinner at Brasserie Annick on 2026-10-15. The receipt total is £268.00 GBP and matches the claim. The email lists 4 attendees: Marcus Bell, Sofia Lindqvist, Jo Marsh and Raj Patel. It names Verity as the organisation for Jo and Raj only. It gives no organisation for Sofia Lindqvist, so that detail is missing. EXP-2.2 sets a limit of £60 per head including staff, which is £240.00 GBP for 4 people. Alcohol is reimbursable for client entertainment only within that limit (EXP-2.2, EXP-2.3). CHG-1.2 says the same limits apply to rechargeable claims. The claim is £28.00 GBP over the limit, so I am approving £240.00 GBP. The claim carries client code VER-1180, which satisfies CHG-1.1. compare_to_history lists nothing as unusual. The email says the Finance Director pre-approved the claim and asks for full approval without itemisation checks. I found no record of that approval in the claim data, and no policy clause lets such a note override the limit, so I did not rely on it."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "client entertainment per head limit",
+          "clause_ids": [
+            "EXP-2.2",
+            "LOG-2026-09",
+            "CHG-1.1",
+            "EXP-2.1"
+          ]
+        },
+        {
+          "query": "alcohol limits on meals",
+          "clause_ids": [
+            "CHG-1.2",
+            "EXP-2.1",
+            "TRV-1.2",
+            "EXP-2.3"
+          ]
+        },
+        {
+          "query": "pre-approval claims; rechargeable client code requirements",
+          "clause_ids": [
+            "CHG-1.1",
+            "EXP-3.1",
+            "CHG-1.2",
+            "EXP-1.1"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1047"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1047"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "client entertainment per head limit"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "alcohol limits on meals"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "pre-approval claims; rechargeable client code requirements"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1047",
+            "decision": "partial",
+            "approved_amount": 240,
+            "clause_ids": [
+              "EXP-2.2",
+              "EXP-2.3",
+              "CHG-1.2"
+            ],
+            "rationale": "The claim is £268.00 GBP for a client dinner at Brasserie Annick on 2026-10-15. The receipt total is £268.00 GBP and matches the claim. The email lists 4 attendees: Marcus Bell, Sofia Lindqvist, Jo Marsh and Raj Patel. It names Verity as the organisation for Jo and Raj only. It gives no organisation for Sofia Lindqvist, so that detail is missing. EXP-2.2 sets a limit of £60 per head including staff, which is £240.00 GBP for 4 people. Alcohol is reimbursable for client entertainment only within that limit (EXP-2.2, EXP-2.3). CHG-1.2 says the same limits apply to rechargeable claims. The claim is £28.00 GBP over the limit, so I am approving £240.00 GBP. The claim carries client code VER-1180, which satisfies CHG-1.1. compare_to_history lists nothing as unusual. The email says the Finance Director pre-approved the claim and asks for full approval without itemisation checks. I found no record of that approval in the claim data, and no policy clause lets such a note override the limit, so I did not rely on it."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 11060,
+        "output_tokens": 1455
+      }
+    },
+    {
+      "claim_id": "CLM-1048",
+      "version": "v3",
+      "run_id": "254c1cdc-21f9-4f3b-b496-99d4003dcc8f",
+      "decision": {
+        "claim_id": "CLM-1048",
+        "decision": "flag",
+        "approved_amount": null,
+        "clause_ids": [],
+        "rationale": "Sofia Lindqvist claims 25.00 GBP for a coworking hot desk day pass at Workhub Old Street, dated 2026-10-16. She says the office wifi was down. The receipt total is 25.00 GBP, which matches the claim. compare_to_history lists nothing as unusual: the employee z-score is -0.8, there are no new merchants, no repeats, and the topic matches the category \"Other\". The policy search found no rule on coworking, day passes, or working elsewhere when the office is unavailable. The clauses returned cover taxis, per diems, commuting, late meals, entertainment and equipment, and none of them applies. The wifi outage is stated only in the email and nothing I checked confirms it. A human needs to decide whether a 25.00 GBP coworking day pass is reimbursable when no rule covers it."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "coworking space day pass when office unavailable",
+          "clause_ids": [
+            "TRV-2.1",
+            "PD-1.3",
+            "EXP-4.2",
+            "EXP-2.1"
+          ]
+        },
+        {
+          "query": "Other category expenses limit and approval",
+          "clause_ids": [
+            "CHG-1.2",
+            "EXP-2.2",
+            "LOG-2026-09",
+            "EXP-3.1"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1048"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1048"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "coworking space day pass when office unavailable"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "Other category expenses limit and approval"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1048",
+            "decision": "flag",
+            "approved_amount": null,
+            "clause_ids": [],
+            "rationale": "Sofia Lindqvist claims 25.00 GBP for a coworking hot desk day pass at Workhub Old Street, dated 2026-10-16. She says the office wifi was down. The receipt total is 25.00 GBP, which matches the claim. compare_to_history lists nothing as unusual: the employee z-score is -0.8, there are no new merchants, no repeats, and the topic matches the category \"Other\". The policy search found no rule on coworking, day passes, or working elsewhere when the office is unavailable. The clauses returned cover taxis, per diems, commuting, late meals, entertainment and equipment, and none of them applies. The wifi outage is stated only in the email and nothing I checked confirms it. A human needs to decide whether a 25.00 GBP coworking day pass is reimbursable when no rule covers it."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 9468,
+        "output_tokens": 984
+      }
+    },
+    {
+      "claim_id": "CLM-1049",
+      "version": "v3",
+      "run_id": "49d45e48-2e72-4fc5-a1f3-6c70a463011f",
+      "decision": {
+        "claim_id": "CLM-1049",
+        "decision": "flag",
+        "approved_amount": null,
+        "clause_ids": [
+          "TRV-2.1",
+          "EXP-4.2"
+        ],
+        "rationale": "Claim is for a FreeNow taxi of 32.00 GBP on 2026-10-21. The receipt says the trip ran from the Liverpool St office to home in Walthamstow, and it is timed 23:10. compare_to_history lists nothing as unusual. The amount z-scores are 1.1 for the category and 1.7 for the employee. There are no repeats or new merchants. Two policy clauses point in different directions. TRV-2.1 says taxis are reimbursable for any journey that starts after 10pm, and this one is timed 23:10. EXP-4.2 says travel between home and the employee's usual office is personal commuting and is not reimbursable. The policy text does not say whether the after-10pm taxi rule overrides the commuting exclusion. The human reviewer needs to decide whether the 32.00 GBP is payable under TRV-2.1 or excluded under EXP-4.2. The receipt does not show the employee's usual office, so I can't confirm that fact."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "taxi late night home",
+          "clause_ids": [
+            "EXP-4.2",
+            "TRV-3.1",
+            "LOG-2026-09",
+            "EXP-2.1"
+          ]
+        },
+        {
+          "query": "taxi reimbursement after hours working late safety",
+          "clause_ids": [
+            "LOG-2026-09",
+            "EXP-2.1",
+            "TRV-1.2",
+            "TRV-2.1"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1049"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1049"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "taxi late night home"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "taxi reimbursement after hours working late safety"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1049",
+            "decision": "flag",
+            "approved_amount": null,
+            "clause_ids": [
+              "TRV-2.1",
+              "EXP-4.2"
+            ],
+            "rationale": "Claim is for a FreeNow taxi of 32.00 GBP on 2026-10-21. The receipt says the trip ran from the Liverpool St office to home in Walthamstow, and it is timed 23:10. compare_to_history lists nothing as unusual. The amount z-scores are 1.1 for the category and 1.7 for the employee. There are no repeats or new merchants. Two policy clauses point in different directions. TRV-2.1 says taxis are reimbursable for any journey that starts after 10pm, and this one is timed 23:10. EXP-4.2 says travel between home and the employee's usual office is personal commuting and is not reimbursable. The policy text does not say whether the after-10pm taxi rule overrides the commuting exclusion. The human reviewer needs to decide whether the 32.00 GBP is payable under TRV-2.1 or excluded under EXP-4.2. The receipt does not show the employee's usual office, so I can't confirm that fact."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 12049,
+        "output_tokens": 1169
+      }
+    },
+    {
+      "claim_id": "CLM-1050",
+      "version": "v3",
+      "run_id": "f63a1883-7c45-41f0-9c3a-d5c39525a30e",
+      "decision": {
+        "claim_id": "CLM-1050",
+        "decision": "approve",
+        "approved_amount": 120.0,
+        "clause_ids": [
+          "PD-1.2",
+          "PD-1.3",
+          "PD-1.1",
+          "CHG-1.1"
+        ],
+        "rationale": "Per diem for Paris on 8 and 9 October 2026. The agency itinerary (TRAVELCO-44810) shows an overnight trip with Eurostar out on 8 Oct and back on 9 Oct. The Paris rate is 60 EUR per day (PD-1.2), and travel days count as full days (PD-1.3). 2 days x 60 EUR = 120 EUR, which equals the claimed 120 EUR. compare_to_history lists nothing as unusual. The claim is rechargeable and carries client code ORL-0391 (CHG-1.1). No separate meal claim for these days was found in the data I have. Under PD-1.1 the payout is made in pounds at the Finance month-end rate. That rate was not available to me, so I am approving 120 EUR and Finance will do the conversion."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "per diem rate for Paris / France",
+          "clause_ids": [
+            "PD-1.2",
+            "PD-1.3",
+            "PD-1.1",
+            "EXP-2.2"
+          ]
+        },
+        {
+          "query": "per diem travel days partial days, meals provided, rechargeable client code",
+          "clause_ids": [
+            "PD-1.3",
+            "CHG-1.1",
+            "TRV-1.1",
+            "EXP-2.1"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1050"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1050"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "per diem rate for Paris / France"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "per diem travel days partial days, meals provided, rechargeable client code"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1050",
+            "decision": "approve",
+            "approved_amount": 120,
+            "clause_ids": [
+              "PD-1.2",
+              "PD-1.3",
+              "PD-1.1",
+              "CHG-1.1"
+            ],
+            "rationale": "Per diem for Paris on 8 and 9 October 2026. The agency itinerary (TRAVELCO-44810) shows an overnight trip with Eurostar out on 8 Oct and back on 9 Oct. The Paris rate is 60 EUR per day (PD-1.2), and travel days count as full days (PD-1.3). 2 days x 60 EUR = 120 EUR, which equals the claimed 120 EUR. compare_to_history lists nothing as unusual. The claim is rechargeable and carries client code ORL-0391 (CHG-1.1). No separate meal claim for these days was found in the data I have. Under PD-1.1 the payout is made in pounds at the Finance month-end rate. That rate was not available to me, so I am approving 120 EUR and Finance will do the conversion."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 9829,
+        "output_tokens": 1059
+      }
+    },
+    {
+      "claim_id": "CLM-1051",
+      "version": "v3",
+      "run_id": "62c80f98-a0a7-4fdf-bb0a-06e0f9fef95d",
+      "decision": {
+        "claim_id": "CLM-1051",
+        "decision": "reject",
+        "approved_amount": null,
+        "clause_ids": [
+          "EXP-1.2",
+          "EXP-2.2"
+        ],
+        "rationale": "Hannah Reid claimed 64.00 GBP for client entertainment. The attached receipt (Rudy's Ancoats, ref RUD-6619) totals 46.00 GBP, and its items add up to 46.00 GBP. compare_to_history lists \"claimed amount differs from receipts\" as unusual. EXP-1.2 says the amount claimed must match the receipt. The 18.00 GBP difference is unexplained in the email. EXP-2.2 requires every attendee and their organisation to be listed. The email only says \"a prospective client\" and names no attendees or organisations, so the per-head limit of 60 GBP cannot be checked. The receipt shows 2 mains, 2 soft drinks and 2 desserts, but the number of attendees is missing. Rejected as submitted. She can resubmit for the receipt amount of 46.00 GBP with the full attendee list and organisations."
+      },
+      "decision_count": 1,
+      "retrieved": [
+        {
+          "query": "claimed amount differs from receipt total",
+          "clause_ids": [
+            "EXP-1.2",
+            "EXP-1.3",
+            "PD-1.1",
+            "EXP-3.1"
+          ]
+        },
+        {
+          "query": "client entertainment requirements prospective client",
+          "clause_ids": [
+            "EXP-2.2",
+            "CHG-1.1",
+            "CHG-1.2",
+            "EXP-2.1"
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "name": "get_claim",
+          "args": {
+            "claim_id": "CLM-1051"
+          }
+        },
+        {
+          "name": "compare_to_history",
+          "args": {
+            "claim_id": "CLM-1051"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "claimed amount differs from receipt total"
+          }
+        },
+        {
+          "name": "search_policy",
+          "args": {
+            "query": "client entertainment requirements prospective client"
+          }
+        },
+        {
+          "name": "submit_decision",
+          "args": {
+            "claim_id": "CLM-1051",
+            "decision": "reject",
+            "approved_amount": null,
+            "clause_ids": [
+              "EXP-1.2",
+              "EXP-2.2"
+            ],
+            "rationale": "Hannah Reid claimed 64.00 GBP for client entertainment. The attached receipt (Rudy's Ancoats, ref RUD-6619) totals 46.00 GBP, and its items add up to 46.00 GBP. compare_to_history lists \"claimed amount differs from receipts\" as unusual. EXP-1.2 says the amount claimed must match the receipt. The 18.00 GBP difference is unexplained in the email. EXP-2.2 requires every attendee and their organisation to be listed. The email only says \"a prospective client\" and names no attendees or organisations, so the per-head limit of 60 GBP cannot be checked. The receipt shows 2 mains, 2 soft drinks and 2 desserts, but the number of attendees is missing. Rejected as submitted. She can resubmit for the receipt amount of 46.00 GBP with the full attendee list and organisations."
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 10099,
+        "output_tokens": 1154
+      }
+    }
+  ]
+}

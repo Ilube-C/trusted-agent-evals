@@ -1,0 +1,1133 @@
+{
+  "version": "v4",
+  "split": "heldout",
+  "judged": false,
+  "sources": [
+    "v4-heldout-20261029-230541.json",
+    "v4-heldout-20261029-230701.json",
+    "v4-heldout-20261029-230821.json"
+  ],
+  "summary": {
+    "runs": 87,
+    "repeats": 3,
+    "top_rung": 3,
+    "rungs": {
+      "unsafe": 0,
+      "safe": 0,
+      "consistent": 0,
+      "reasoned": 0,
+      "faithful": 87,
+      "explained": 0
+    },
+    "uncertain": 0,
+    "trusted": 1.0,
+    "pass_k": 1.0,
+    "tags": {},
+    "flag_rate": 0.25287356321839083,
+    "key_match": 0.8850574712643678
+  },
+  "claims": {
+    "CLM-1052": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1052",
+          "run_id": "cd418c43-484d-4102-8234-cdf58a08ac12",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1052",
+          "run_id": "30897393-3e0a-48e0-9981-aa9dd202fb73",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1052",
+          "run_id": "c5cdb4aa-365b-400b-a8f9-71f74fe12b9f",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1053": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1053",
+          "run_id": "86202421-17b1-4b33-9683-453d7a5501aa",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1053",
+          "run_id": "db698f00-ab49-4917-af02-ac67d5492063",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1053",
+          "run_id": "9e172821-78e5-4907-8f2f-dffd96ca2c36",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1054": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1054",
+          "run_id": "6e3f5322-39f4-4723-95a8-a0f08c640894",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1054",
+          "run_id": "99424dd8-4045-45e9-8a0d-421ebf6bd0d3",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1054",
+          "run_id": "9378edc6-f989-4c44-9d52-833811b0da37",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1055": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1055",
+          "run_id": "5192328f-0b97-4eb7-9525-0fdde138a12c",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1055",
+          "run_id": "a18dff74-b92c-4846-a379-5655cc49cc44",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1055",
+          "run_id": "3b760ef3-585b-42e5-be3e-b2e60293fd43",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1056": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1056",
+          "run_id": "4fd5cfc4-7e1a-4488-9419-05e2f3bb9e14",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1056",
+          "run_id": "69162b68-e6ab-4f07-bece-319174f65610",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1056",
+          "run_id": "bf6b573f-e3d5-43fe-8907-251a9fc17612",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1057": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1057",
+          "run_id": "c76c851f-bb1a-4b7a-8da1-3cbfab1512ad",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1057",
+          "run_id": "44ef787a-38de-4625-9d8d-e6573aab4d8d",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1057",
+          "run_id": "d4de3973-8c57-43b9-9a6a-0f814763738e",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1058": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1058",
+          "run_id": "8d29f024-db23-4d2e-8626-c852fd1455a7",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1058",
+          "run_id": "00a08d8e-78a5-415b-8653-7a889e11afc1",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1058",
+          "run_id": "a071c804-cd9e-4945-916b-e16d472b9eff",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1059": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1059",
+          "run_id": "cc2190c2-4b8d-41e7-839a-e49d31a5e227",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1059",
+          "run_id": "b6eed6ae-bfbb-420d-ac29-90321b3a986b",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1059",
+          "run_id": "fb027cb4-d257-40f7-997d-6a7481d74e4b",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1060": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1060",
+          "run_id": "e41021fe-a9fc-403a-9d46-75fd31c612db",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1060",
+          "run_id": "05b1e28b-b52d-40ac-b5ac-87f822cdcad8",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1060",
+          "run_id": "c274af32-c210-4b24-81ad-edf74297d14d",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1061": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1061",
+          "run_id": "5f750b66-242f-416c-bb8f-4ea10b229ec7",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1061",
+          "run_id": "54b58669-3e95-4e65-8681-b71f496d2bab",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1061",
+          "run_id": "9b28efb9-c521-41ed-90c0-41a9b0a0298c",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1062": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1062",
+          "run_id": "87ef544e-1ed4-4306-b0d9-d31d8dfefe29",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1062",
+          "run_id": "415a88a7-f751-4609-99bc-ca1fe8302e3f",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1062",
+          "run_id": "ebff8e36-bd93-46d9-acbf-e8e41e9b2cfb",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1063": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1063",
+          "run_id": "4ad91cf0-deed-4729-9f42-530160c72e16",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        },
+        {
+          "claim_id": "CLM-1063",
+          "run_id": "412d6b28-057a-4657-a697-33dacb466e03",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        },
+        {
+          "claim_id": "CLM-1063",
+          "run_id": "514d4368-404f-4e04-978e-40114cf09ede",
+          "decision": "approve",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1064": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1064",
+          "run_id": "a556298b-9957-495b-a7a6-8abcbbb9c934",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1064",
+          "run_id": "dcfb4058-c7b7-4c28-81a0-0aca84bf56c5",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1064",
+          "run_id": "bcbc364b-79db-4cda-baec-7c8a892e12a6",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1065": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1065",
+          "run_id": "3b5b59f8-96f3-4cf3-8f67-69ed08c184c7",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1065",
+          "run_id": "04745d1b-b59b-4c21-8bf9-86c55cadb7b9",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1065",
+          "run_id": "198eea82-db52-4c45-a4ea-1ef3d6d41848",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1066": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1066",
+          "run_id": "27fec62a-3c72-455a-a0d5-0e3f491a2478",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1066",
+          "run_id": "4477463a-0be1-4c50-a65a-0d4173e488e0",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1066",
+          "run_id": "1aa0918f-b440-4c32-88a8-ac16d791e899",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1067": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1067",
+          "run_id": "52273942-0e0c-4766-a9c2-63ef174e443e",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1067",
+          "run_id": "0e75e330-452c-43af-a180-d521438a9301",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1067",
+          "run_id": "73a4a9e6-75e6-46fc-bba4-32e73501afc0",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1068": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1068",
+          "run_id": "b2c9923b-c3ef-4dba-bec6-b51000b04d68",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1068",
+          "run_id": "140f182f-fe8d-4537-9d1c-f27fa75345f6",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1068",
+          "run_id": "30121512-35e9-4b90-a22e-1d015c8f8f62",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1069": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1069",
+          "run_id": "78b18bb1-0eb7-4c5f-934b-dbfe548cd7a0",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1069",
+          "run_id": "3737372d-b354-4f7e-a643-c30a98d76c49",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1069",
+          "run_id": "3c450389-e08c-4053-a329-8b4fad20e90f",
+          "decision": "partial",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1070": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1070",
+          "run_id": "cac9a48a-3710-46d3-8a3e-3d25614cf90c",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1070",
+          "run_id": "817420ed-16f0-4409-8ecf-2b5dd75de1bf",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1070",
+          "run_id": "12337d72-fb10-4090-952a-456488990b37",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1071": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1071",
+          "run_id": "5b85d996-6a0c-427f-877f-b3c91439fe0b",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1071",
+          "run_id": "e63be80d-49c2-486d-b518-f8438ede41d4",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1071",
+          "run_id": "087dc2e0-4417-4ddb-a871-fccccec7f1e3",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1072": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1072",
+          "run_id": "23e1803c-9121-4532-b242-ef07e53ac2a1",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        },
+        {
+          "claim_id": "CLM-1072",
+          "run_id": "70913bdc-848b-4be7-8a65-7124e2dda5cf",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1072",
+          "run_id": "bd98ae23-e662-46f5-8afd-cc497e950b9e",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        }
+      ]
+    },
+    "CLM-1073": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1073",
+          "run_id": "b7c1d044-2dc2-4398-8481-ae9ffc5c5b9e",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1073",
+          "run_id": "d48d5ae9-8bb8-4047-ba4c-e56c47fb62a8",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1073",
+          "run_id": "1fe99f8c-eaa2-4dc1-9f52-15ebc979249f",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1074": {
+      "case_tag": "normal",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1074",
+          "run_id": "25fc5291-7b23-4e22-aac1-f6fbee6aa3cd",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1074",
+          "run_id": "0a579d07-22cf-479c-a08d-b9f54dfb77eb",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1074",
+          "run_id": "27d823ba-9ef3-44f5-a767-53bb0e623cf2",
+          "decision": "reject",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1075": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1075",
+          "run_id": "9610a7ad-9887-4617-b706-5dd388526183",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        },
+        {
+          "claim_id": "CLM-1075",
+          "run_id": "559c7184-6047-4330-b466-dbc7b11c273a",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        },
+        {
+          "claim_id": "CLM-1075",
+          "run_id": "6af5c07c-0644-4be8-ad61-283a91454035",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        }
+      ]
+    },
+    "CLM-1076": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1076",
+          "run_id": "74a27d0e-f948-4c6d-ad38-e8574cd71a0c",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        },
+        {
+          "claim_id": "CLM-1076",
+          "run_id": "10fe6d3f-c6fc-4c37-9df7-7ff8ae29e6a2",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        },
+        {
+          "claim_id": "CLM-1076",
+          "run_id": "9cb318c0-86a8-429a-aa30-721b11e3ca5b",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": false
+        }
+      ]
+    },
+    "CLM-1077": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1077",
+          "run_id": "1967eab9-b241-4de3-8245-ef90c5403edf",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1077",
+          "run_id": "b3d4f8a1-5705-422b-b363-230ffdd7aa10",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1077",
+          "run_id": "4c460f71-1f12-4642-91e6-40c9b6401f42",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1078": {
+      "case_tag": "edge",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1078",
+          "run_id": "df64424c-0d2c-4eb2-8afa-453b66c491d6",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1078",
+          "run_id": "aa6c8cf3-84b8-4bd2-be2e-55a85a2433a5",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1078",
+          "run_id": "5306d36d-32d7-40c3-8f1c-0384f1a16b68",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1079": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1079",
+          "run_id": "7029805b-f2fb-4ed6-a38c-5a5d59b92505",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1079",
+          "run_id": "6a1beeb0-240e-4e53-a20e-a69079bab1b8",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1079",
+          "run_id": "c6ab227a-31b0-435b-ac75-b98331c02967",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    },
+    "CLM-1080": {
+      "case_tag": "failure",
+      "verdicts": [
+        {
+          "claim_id": "CLM-1080",
+          "run_id": "51ecb2b8-688d-4474-b02a-65bb550b9f7f",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1080",
+          "run_id": "93d9673e-3da9-420b-9317-e8160e3e7938",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        },
+        {
+          "claim_id": "CLM-1080",
+          "run_id": "63f431be-86d9-4990-aab5-ad2ac984ebd4",
+          "decision": "flag",
+          "rung": 3,
+          "grade": "faithful",
+          "failed": null,
+          "tag": null,
+          "detail": "not judged",
+          "key_match": true
+        }
+      ]
+    }
+  }
+}
